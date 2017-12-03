@@ -22,18 +22,6 @@
 		display: block;
 	}
 
-.tick-text{
-color:#0f0e0e;    
-text-shadow: 1px 0 #0f0e0e;
-letter-spacing:1px;
-}
-.tick-text-white{
-color:#ffffff;    
-text-shadow: 1px 0 #ffffff;
-letter-spacing:1px;
-}
-
-
 	body {
 		line-height: 1;
 	}
@@ -1737,7 +1725,6 @@ letter-spacing:1px;
 				font-style: normal;
 				font-weight: normal;
 				text-transform: none !important;
-				 
 			}
 
 			a.special:not(.button):before {
@@ -2196,7 +2183,6 @@ p a {
 		.image img {
 			border-radius: 5px;
 			display: block;
-			height:250px;
 		}
 
 		.image.left, .image.right {
@@ -2259,7 +2245,6 @@ p a {
 
 		ul li {
 			padding-left: 0.5em;
-			color: #353849;
 		}
 
 		ul.alt {
@@ -2657,7 +2642,7 @@ p a {
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #4ca797;
+			background-color: #559CAD;
 			box-shadow: none;
 		}
 
@@ -3035,7 +3020,7 @@ p a {
 		}
 
 		#menu h2 {
-			border-bottom: solid 2px rgb(53,56,73);
+			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
 			padding-bottom: 1em;
 			color: #2D3141;
 		}
@@ -3073,7 +3058,7 @@ p a {
 					border-radius: 5px;
 					border: 0;
 					display: block;
-					color: #353849;
+					color: #2D3141;
 					font-family: Raleway, Helvetica, sans-serif;
 					font-size: 0.8em;
 					font-weight: 200;
@@ -3081,15 +3066,10 @@ p a {
 					line-height: 1.85em;
 					padding: 0.75em 0;
 					text-transform:none;
-					
-                    text-shadow: 0.5px 0 #353849;
-                    letter-spacing:1px;
 				}
 
 					#menu .links li a:hover {
-					/*	background: #2D3141; */
-					color: #353849 !important;
-					text-decoration: underline;
+						background: #2D3141;
 						
 					}
 
@@ -3794,7 +3774,6 @@ p a {
 			padding: 2em 0 0 0;
 			width: 100%;
 		}
-	 
 
 			#footer .inner .copyright li {
 				border-left: solid 2px rgba(255, 255, 255, 0.125);
@@ -3903,70 +3882,31 @@ p a {
 
 	}
 
-
-
-a.special2:not(.button) {
-			text-decoration: none;
-			border-bottom: 0;
-			display: block;
-			font-family: Raleway, Helvetica, sans-serif;
-			font-size: 0.8em;
-			font-weight: 700;
-			letter-spacing: 0.1em;
-			margin: 0 0 2em 0;
-			text-transform: none;
-		}
-
-			a.special2:not(.button):before {
-				-moz-osx-font-smoothing: grayscale;
-				-webkit-font-smoothing: antialiased;
-				font-family: FontAwesome;
-				font-style: normal;
-				font-weight: normal;
-				text-transform: none !important;
-				 
-			}
-
-			a.special2:not(.button):before {
-				-moz-transition: background-color 0.2s ease-in-out;
-				-webkit-transition: background-color 0.2s ease-in-out;
-				-ms-transition: background-color 0.2s ease-in-out;
-				transition: background-color 0.2s ease-in-out;
-				border-radius: 100%;
-				border: solid 2px rgb(53,56,73);
-				content: '\f105';
-				display: inline-block;
-				font-size: 1.25em;
-				height: 2em;
-				line-height: 1.65em;
-				margin-right: 0.85em;
-				text-align: center;
-				text-indent: 0.15em;
-				vertical-align: middle;
-				width: 2em;
-			}
-
-			a.special2:not(.button):hover:before {
-				background-color: rgba(255, 255, 255, 0.025);
-			}
-
-			a.special2:not(.button):active:before {
-				background-color: rgba(255, 255, 255, 0.075);
-			}
- 
- 
-.li-white{
-color:#ffffff;}
-
-
-.flag-div{
+	.flag-div{
 position: absolute;
 top: 0.3em;
 right: 9em;
 }
 
-.circle-img{
-  border-radius: 80%;
-  width:200px
+.love {
+  display: inline-block;
+  position: relative;
+  top: .2em;
+  font-size: 1.0em;
+  color: #e74c3c;
+  -webkit-transform: scale(.9);
+  -moz-transform: scale(.9);
+  transform: scale(.9);
+  -webkit-animation: love .5s infinite linear alternate-reverse;
+  -moz-animation: love .5s infinite linear alternate-reverse;
+  animation: love .5s infinite linear alternate-reverse;
 }
- 
+@-webkit-keyframes love {
+  to {-webkit-transform: scale(1.2);}
+}
+@-moz-keyframes love {
+  to {-moz-transform: scale(1.2);}
+}
+@keyframes love {
+  to {transform: scale(1.2);}
+}
